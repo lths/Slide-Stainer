@@ -31,7 +31,7 @@ class SixthStage(Screen):
 
 class RunStage(Screen):
     pass
-
+#fhg
 class MyScreenManager(ScreenManager):
     def new_color_screen(self):
         name = str(time.time())
