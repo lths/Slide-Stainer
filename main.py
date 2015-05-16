@@ -32,6 +32,8 @@ class SixthStage(Screen):
 class RunStage(Screen):
     pass
 #fhg
+
+
 class MyScreenManager(ScreenManager):
     def new_color_screen(self):
         name = str(time.time())
@@ -40,6 +42,7 @@ class MyScreenManager(ScreenManager):
         self.add_widget(s)
         self.current = name
 	first_Stage_Enable = 1
+
 	
 #	def first_En_State(self):
 #		if first_Stage_Enable == 0:
@@ -74,16 +77,24 @@ MyScreenManager:
     BoxLayout:
         orientation: 'vertical'
         BoxLayout:
+			orientation: 'horizontal'
 			Label:
-
 				text: 'Enable First Stage: '
 				font_size: 10
 			ToggleButton:
 				id: first_Stage_Enable
-
+		BoxLayout:
+			orientation: 'horizontal'
+			Label:
+				text: 'Heating OR Liquid Stage: '
+				font_size: 10
+			ToggleButton:
+				id: first_Stage_Type
+				text: ''
         Button:
 			font_size: 10
             text: ' %s' % first_Stage_Enable.state
+			on_release: print("test")
 		BoxLayout:
 			orientation: 'vertical'
 			Label:
@@ -334,5 +345,6 @@ MyScreenManager:
 class ScreenManagerApp(App):
     def build(self):
         return root_widget
+	
 
 ScreenManagerApp().run()
