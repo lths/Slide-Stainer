@@ -73,14 +73,14 @@ MyScreenManager:
 			orientation: 'horizontal'
 			Label:
 				text: 'Enable First Stage: '
-				font_size: 10
+				font_size: 12
 			ToggleButton:
 				id: first_Stage_Enable
 		BoxLayout:
 			orientation: 'horizontal'
 			Label:
 				text: 'Heating Stage: '
-				font_size: 10
+				font_size: 12
 			Button:
 				id: first_Stage_Type
 				on_release: app.root.test_Callback()
@@ -89,22 +89,37 @@ MyScreenManager:
 			orientation: 'horizontal'
 			Label:
 				text: 'Liquid Stage: '
-				font_size: 10
+				font_size: 12
 			Button:
 				id: first_Stage_Type
 				on_release: app.root.test_Callback()
 				text: 
-        Button:
-			font_size: 10
-            text: ' %s' % first_Stage_Enable.state
-			on_release: print("test")
+		BoxLayout:
+			orientation: 'horizontal'
+			ToggleButton:
+				text: 'Liquid Feed 1: '
+				font_size: 12
+			ToggleButton:
+				font_size: 12
+				on_release: app.root.test_Callback()
+				text: 'Liquid Feed 2: '
+			ToggleButton:
+				text: 'Liquid Feed 3: '
+				font_size: 12
+			ToggleButton:
+				font_size: 12
+				on_release: app.root.test_Callback()
+				text: 'Liquid Feed 4:'
+			ToggleButton:
+				font_size: 12
+				on_release: app.root.test_Callback()
+				text: 'Liquid Feed 5: '			
 		BoxLayout:
 			orientation: 'vertical'
 			Label:
-				text: '.'
-				font_size: 1
-			Button:
-				text: "goop"
+				text: '........................'
+				font_size: 10
+
         BoxLayout:
             Button:
                 text: 'goto second screen'
