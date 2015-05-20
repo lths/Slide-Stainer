@@ -4,7 +4,8 @@ from kivy.lang import Builder
 from kivy.properties import ListProperty
 from kivy.uix.boxlayout import BoxLayout
 from kivy.uix.togglebutton import ToggleButton
-
+from kivy.uix.widget import Widget
+from kivy.graphics import Line
 
 from kivy.uix.screenmanager import ScreenManager, Screen, FadeTransition
 
@@ -12,8 +13,8 @@ import time
 import random
 
 class FirstStage(Screen):
-    pass
-
+	pass
+	
 class SecondStage(Screen):
     pass
 
@@ -31,27 +32,18 @@ class SixthStage(Screen):
 
 class RunStage(Screen):
     pass
-#fhg
+	
+
+
 
 
 class MyScreenManager(ScreenManager):
-    def new_color_screen(self):
-        name = str(time.time())
-        s = ColorScreen(name=name,
-                         color=[random.random() for _ in range(3)] + [1])
-        self.add_widget(s)
-        self.current = name
-	first_Stage_Enable = 1
-
+	def test_Callback(self):
+		print "test1"
+		
+		
+	button_val = "OPEN"
 	
-#	def first_En_State(self):
-#		if first_Stage_Enable == 0:
-#			first_Stage_Enable = 1
-#			return "Enabled"
-#		else:
-#			first_Stage_Enable = 0
-#			return "Disabled"
-
 
 
 
@@ -71,6 +63,7 @@ MyScreenManager:
 	FifthStage:
 	SixthStage:
 	RunStage:
+
 	
 <FirstStage>:
     name: 'first'
@@ -86,11 +79,21 @@ MyScreenManager:
 		BoxLayout:
 			orientation: 'horizontal'
 			Label:
-				text: 'Heating OR Liquid Stage: '
+				text: 'Heating Stage: '
 				font_size: 10
-			ToggleButton:
+			Button:
 				id: first_Stage_Type
-				text: ''
+				on_release: app.root.test_Callback()
+				text: 
+		BoxLayout:
+			orientation: 'horizontal'
+			Label:
+				text: 'Liquid Stage: '
+				font_size: 10
+			Button:
+				id: first_Stage_Type
+				on_release: app.root.test_Callback()
+				text: 
         Button:
 			font_size: 10
             text: ' %s' % first_Stage_Enable.state
@@ -340,6 +343,11 @@ MyScreenManager:
                 text: 'goto sixth screen'
                 font_size: 10
                 on_release: app.root.current = 'sixth'
+<heating_Param>
+	label_widget: heating_parameters
+	BoxLayout:
+		Button:
+			text: 'this is heating.'
 ''')
 
 class ScreenManagerApp(App):
