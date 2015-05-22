@@ -63,7 +63,6 @@ MyScreenManager:
 	FifthStage:
 	SixthStage:
 	RunStage:
-
 	
 <FirstStage>:
     name: 'first'
@@ -125,7 +124,6 @@ MyScreenManager:
 			Label:
 				text: '........................'
 				font_size: 10
-
         BoxLayout:
             Button:
                 text: 'goto second screen'
@@ -338,7 +336,6 @@ MyScreenManager:
         Label:
             text: 'run screen!'
             font_size: 30
-
         BoxLayout:
             Button:
                 text: 'goto first screen'
