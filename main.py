@@ -96,9 +96,16 @@ MyScreenManager:
 					on_release: app.root.test_Callback()
 					text: 
 		BoxLayout:
-			Label:
-				text: 'Stage 1 Time'
-			
+			BoxLayout:
+				Label:
+					text: 'Stage 1 Time (seconds)'
+				TextInput:
+					id: stage_1_time
+			BoxLayout:
+				Label:
+					text: 'Stage 1 Temperature (C)'
+				TextInput:
+
 		BoxLayout:
 			orientation: 'horizontal'
 			ToggleButton:
