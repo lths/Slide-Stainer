@@ -77,23 +77,29 @@ MyScreenManager:
 			ToggleButton:
 				id: first_Stage_Enable
 		BoxLayout:
-			orientation: 'horizontal'
-			Label:
-				text: 'Heating Stage: '
-				font_size: 12
-			Button:
-				id: first_Stage_Type
-				on_release: app.root.test_Callback()
-				text: 
+		
+			BoxLayout:
+				orientation: 'horizontal'
+				Label:
+					text: 'Heating Stage: '
+					font_size: 12
+				ToggleButton:
+					id: first_Stage_Type
+					on_release: app.root.test_Callback()
+					text: 
+			BoxLayout:
+				orientation: 'horizontal'
+				Label:
+					text: 'Liquid Stage: '
+					font_size: 12
+				ToggleButton:
+					id: first_Stage_Type
+					on_release: app.root.test_Callback()
+					text: 
 		BoxLayout:
-			orientation: 'horizontal'
 			Label:
-				text: 'Liquid Stage: '
-				font_size: 12
-			Button:
-				id: first_Stage_Type
-				on_release: app.root.test_Callback()
-				text: 
+				text: 'Stage 1 Time'
+			
 		BoxLayout:
 			orientation: 'horizontal'
 			ToggleButton:
