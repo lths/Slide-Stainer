@@ -71,7 +71,7 @@ MyScreenManager:
         BoxLayout:
 			orientation: 'horizontal'
 			Label:
-				text: 'Enable First Stage: '
+				text: 'Enable Stage: '
 				font_size: 12
 			ToggleButton:
 				id: first_Stage_Enable
@@ -160,13 +160,69 @@ MyScreenManager:
     name: 'second'
     BoxLayout:
         orientation: 'vertical'
-        Label:
-            text: 'second screen!'
-            font_size: 30
-        Image:
-            source: 'colours.png'
-            allow_stretch: True
-            keep_ratio: False
+        BoxLayout:
+			orientation: 'horizontal'
+			Label:
+				text: 'Enable Stage: '
+				font_size: 12
+			ToggleButton:
+				id: first_Stage_Enable
+		BoxLayout:
+		
+			BoxLayout:
+				orientation: 'horizontal'
+				Label:
+					text: 'Heating Stage: '
+					font_size: 12
+				ToggleButton:
+					id: first_Stage_Type
+					on_release: app.root.test_Callback()
+					text: 
+			BoxLayout:
+				orientation: 'horizontal'
+				Label:
+					text: 'Liquid Stage: '
+					font_size: 12
+				ToggleButton:
+					id: first_Stage_Type
+					on_release: app.root.test_Callback()
+					text: 
+		BoxLayout:
+			BoxLayout:
+				Label:
+					text: 'Stage 2 Time (seconds)'
+				TextInput:
+					id: stage_1_time
+			BoxLayout:
+				Label:
+					text: 'Stage 2 Temperature (C)'
+				TextInput:
+
+		BoxLayout:
+			orientation: 'horizontal'
+			ToggleButton:
+				text: 'Liquid Feed 1: '
+				font_size: 12
+			ToggleButton:
+				font_size: 12
+				on_release: app.root.test_Callback()
+				text: 'Liquid Feed 2: '
+			ToggleButton:
+				text: 'Liquid Feed 3: '
+				font_size: 12
+			ToggleButton:
+				font_size: 12
+				on_release: app.root.test_Callback()
+				text: 'Liquid Feed 4:'
+			ToggleButton:
+				font_size: 12
+				on_release: app.root.test_Callback()
+				text: 'Liquid Feed 5: '			
+		BoxLayout:
+			orientation: 'vertical'
+			Label:
+				text: '........................'
+				font_size: 10
         BoxLayout:
             Button:
                 text: 'goto second screen'
@@ -196,13 +252,69 @@ MyScreenManager:
     name: 'third'
     BoxLayout:
         orientation: 'vertical'
-        Label:
-            text: 'Third screen!'
-            font_size: 30
-        Image:
-            source: 'colours.png'
-            allow_stretch: True
-            keep_ratio: False
+        BoxLayout:
+			orientation: 'horizontal'
+			Label:
+				text: 'Enable Stage: '
+				font_size: 12
+			ToggleButton:
+				id: first_Stage_Enable
+		BoxLayout:
+		
+			BoxLayout:
+				orientation: 'horizontal'
+				Label:
+					text: 'Heating Stage: '
+					font_size: 12
+				ToggleButton:
+					id: first_Stage_Type
+					on_release: app.root.test_Callback()
+					text: 
+			BoxLayout:
+				orientation: 'horizontal'
+				Label:
+					text: 'Liquid Stage: '
+					font_size: 12
+				ToggleButton:
+					id: first_Stage_Type
+					on_release: app.root.test_Callback()
+					text: 
+		BoxLayout:
+			BoxLayout:
+				Label:
+					text: 'Stage 3 Time (seconds)'
+				TextInput:
+					id: stage_1_time
+			BoxLayout:
+				Label:
+					text: 'Stage 3 Temperature (C)'
+				TextInput:
+
+		BoxLayout:
+			orientation: 'horizontal'
+			ToggleButton:
+				text: 'Liquid Feed 1: '
+				font_size: 12
+			ToggleButton:
+				font_size: 12
+				on_release: app.root.test_Callback()
+				text: 'Liquid Feed 2: '
+			ToggleButton:
+				text: 'Liquid Feed 3: '
+				font_size: 12
+			ToggleButton:
+				font_size: 12
+				on_release: app.root.test_Callback()
+				text: 'Liquid Feed 4:'
+			ToggleButton:
+				font_size: 12
+				on_release: app.root.test_Callback()
+				text: 'Liquid Feed 5: '			
+		BoxLayout:
+			orientation: 'vertical'
+			Label:
+				text: '........................'
+				font_size: 10
         BoxLayout:
             Button:
                 text: 'goto second screen'
@@ -232,13 +344,69 @@ MyScreenManager:
     name: 'fourth'
     BoxLayout:
         orientation: 'vertical'
-        Label:
-            text: 'fourth screen!'
-            font_size: 30
-        Image:
-            source: 'colours.png'
-            allow_stretch: True
-            keep_ratio: False
+        BoxLayout:
+			orientation: 'horizontal'
+			Label:
+				text: 'Enable Stage: '
+				font_size: 12
+			ToggleButton:
+				id: first_Stage_Enable
+		BoxLayout:
+		
+			BoxLayout:
+				orientation: 'horizontal'
+				Label:
+					text: 'Heating Stage: '
+					font_size: 12
+				ToggleButton:
+					id: first_Stage_Type
+					on_release: app.root.test_Callback()
+					text: 
+			BoxLayout:
+				orientation: 'horizontal'
+				Label:
+					text: 'Liquid Stage: '
+					font_size: 12
+				ToggleButton:
+					id: first_Stage_Type
+					on_release: app.root.test_Callback()
+					text: 
+		BoxLayout:
+			BoxLayout:
+				Label:
+					text: 'Stage 4 Time (seconds)'
+				TextInput:
+					id: stage_1_time
+			BoxLayout:
+				Label:
+					text: 'Stage 4 Temperature (C)'
+				TextInput:
+
+		BoxLayout:
+			orientation: 'horizontal'
+			ToggleButton:
+				text: 'Liquid Feed 1: '
+				font_size: 12
+			ToggleButton:
+				font_size: 12
+				on_release: app.root.test_Callback()
+				text: 'Liquid Feed 2: '
+			ToggleButton:
+				text: 'Liquid Feed 3: '
+				font_size: 12
+			ToggleButton:
+				font_size: 12
+				on_release: app.root.test_Callback()
+				text: 'Liquid Feed 4:'
+			ToggleButton:
+				font_size: 12
+				on_release: app.root.test_Callback()
+				text: 'Liquid Feed 5: '			
+		BoxLayout:
+			orientation: 'vertical'
+			Label:
+				text: '........................'
+				font_size: 10
         BoxLayout:
             Button:
                 text: 'goto second screen'
@@ -268,13 +436,69 @@ MyScreenManager:
     name: 'fifth'
     BoxLayout:
         orientation: 'vertical'
-        Label:
-            text: 'Fifth screen!'
-            font_size: 30
-        Image:
-            source: 'colours.png'
-            allow_stretch: True
-            keep_ratio: False
+        BoxLayout:
+			orientation: 'horizontal'
+			Label:
+				text: 'Enable Stage: '
+				font_size: 12
+			ToggleButton:
+				id: first_Stage_Enable
+		BoxLayout:
+		
+			BoxLayout:
+				orientation: 'horizontal'
+				Label:
+					text: 'Heating Stage: '
+					font_size: 12
+				ToggleButton:
+					id: first_Stage_Type
+					on_release: app.root.test_Callback()
+					text: 
+			BoxLayout:
+				orientation: 'horizontal'
+				Label:
+					text: 'Liquid Stage: '
+					font_size: 12
+				ToggleButton:
+					id: first_Stage_Type
+					on_release: app.root.test_Callback()
+					text: 
+		BoxLayout:
+			BoxLayout:
+				Label:
+					text: 'Stage 5 Time (seconds)'
+				TextInput:
+					id: stage_1_time
+			BoxLayout:
+				Label:
+					text: 'Stage 5 Temperature (C)'
+				TextInput:
+
+		BoxLayout:
+			orientation: 'horizontal'
+			ToggleButton:
+				text: 'Liquid Feed 1: '
+				font_size: 12
+			ToggleButton:
+				font_size: 12
+				on_release: app.root.test_Callback()
+				text: 'Liquid Feed 2: '
+			ToggleButton:
+				text: 'Liquid Feed 3: '
+				font_size: 12
+			ToggleButton:
+				font_size: 12
+				on_release: app.root.test_Callback()
+				text: 'Liquid Feed 4:'
+			ToggleButton:
+				font_size: 12
+				on_release: app.root.test_Callback()
+				text: 'Liquid Feed 5: '			
+		BoxLayout:
+			orientation: 'vertical'
+			Label:
+				text: '........................'
+				font_size: 10
         BoxLayout:
             Button:
                 text: 'goto second screen'
@@ -304,13 +528,69 @@ MyScreenManager:
     name: 'sixth'
     BoxLayout:
         orientation: 'vertical'
-        Label:
-            text: 'Sixth screen!'
-            font_size: 30
-        Image:
-            source: 'colours.png'
-            allow_stretch: True
-            keep_ratio: False
+        BoxLayout:
+			orientation: 'horizontal'
+			Label:
+				text: 'Enable Stage: '
+				font_size: 12
+			ToggleButton:
+				id: first_Stage_Enable
+		BoxLayout:
+		
+			BoxLayout:
+				orientation: 'horizontal'
+				Label:
+					text: 'Heating Stage: '
+					font_size: 12
+				ToggleButton:
+					id: first_Stage_Type
+					on_release: app.root.test_Callback()
+					text: 
+			BoxLayout:
+				orientation: 'horizontal'
+				Label:
+					text: 'Liquid Stage: '
+					font_size: 12
+				ToggleButton:
+					id: first_Stage_Type
+					on_release: app.root.test_Callback()
+					text: 
+		BoxLayout:
+			BoxLayout:
+				Label:
+					text: 'Stage 6 Time (seconds)'
+				TextInput:
+					id: stage_1_time
+			BoxLayout:
+				Label:
+					text: 'Stage 6 Temperature (C)'
+				TextInput:
+
+		BoxLayout:
+			orientation: 'horizontal'
+			ToggleButton:
+				text: 'Liquid Feed 1: '
+				font_size: 12
+			ToggleButton:
+				font_size: 12
+				on_release: app.root.test_Callback()
+				text: 'Liquid Feed 2: '
+			ToggleButton:
+				text: 'Liquid Feed 3: '
+				font_size: 12
+			ToggleButton:
+				font_size: 12
+				on_release: app.root.test_Callback()
+				text: 'Liquid Feed 4:'
+			ToggleButton:
+				font_size: 12
+				on_release: app.root.test_Callback()
+				text: 'Liquid Feed 5: '			
+		BoxLayout:
+			orientation: 'vertical'
+			Label:
+				text: '........................'
+				font_size: 10
         BoxLayout:
             Button:
                 text: 'goto first screen'
